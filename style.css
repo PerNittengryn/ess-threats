@@ -1,0 +1,57 @@
+/* Set the background color to dark */
+body {
+    background-color: #333; /* Dark background */
+    color: white;           /* Default white text */
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: white; /* White title */
+}
+
+/* White text for everything else */
+.black {
+    color: white; /* Default white text */
+}
+
+/* Textarea styling with dark background and light gray border */
+textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+    height: 350px;            /* Adjust height as needed */
+    background-color: #444;    /* Dark background for textarea */
+    color: white;              /* White text inside textarea */
+    border: 1px solid #ccc;    /* Light gray border */
+    border-radius: 5px;        /* Rounded corners */
+    resize: vertical;          /* Allow vertical resizing only */
+}
+
+/* Textarea placeholder text styling */
+textarea::placeholder {
+    color: #aaa; /* Light gray placeholder text */
+}
+
+/* Button styling with dark background and light border */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #555;  /* Dark background for button */
+    color: white;            /* White text */
+    border: 1px solid #ccc;  /* Light gray border */
+    border-radius: 5px;      /* Rounded corners */
+    cursor: pointer;         /* Pointer cursor on hover */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #666;  /* Slightly lighter background on hover */
+}
+
+/* Button active state */
+button:active {
+    background-color: #777;  /* Even lighter on click */
+}
