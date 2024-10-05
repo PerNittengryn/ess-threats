@@ -14,19 +14,27 @@ h1 {
     color: white; /* Default white text */
 }
 
-/* Textarea styling with dark background and light gray border */
 textarea {
+    margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px;
     font-size: 16px;
     width: 100%;
     max-width: 400px;
-    height: 350px;            /* Adjust height as needed */
-    background-color: #444;    /* Dark background for textarea */
+    height: 350px;
+    background-color: #444;    /* Ensure dark background */
     color: white;              /* White text inside textarea */
-    border: 1px solid #ccc;    /* Light gray border */
+    border: 1px solid #aaa;    /* Light gray border */
     border-radius: 5px;        /* Rounded corners */
     resize: vertical;          /* Allow vertical resizing only */
+    box-shadow: none;          /* Remove default browser shadow effects */
+    outline: none;             /* Remove browser-specific outline */
+}
+
+textarea:focus {
+    border-color: #66afe9;     /* Light blue border on focus */
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);  /* Optional glow on focus */
+    outline: none;             /* Prevent outline on focus */
 }
 
 /* Textarea placeholder text styling */
@@ -54,4 +62,10 @@ button:hover {
 /* Button active state */
 button:active {
     background-color: #777;  /* Even lighter on click */
+}
+
+#desc {
+    margin: 20px 0; /* Adds a margin of 20px above and below the subheading */
+    font-size: 16px; /* Ensure the text is readable */
+    color: white; /* Same color scheme */
 }
