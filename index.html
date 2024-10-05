@@ -28,6 +28,12 @@
                 document.getElementById('result').innerHTML = "Mostly harmless.";
             }
         }
+
+        // Add event listener for real-time checking
+        window.onload = function() {
+            const inputBox = document.getElementById('inputBox');
+            inputBox.addEventListener('input', checkWords); // Listen for typing or pasting
+        };
     </script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -35,7 +41,6 @@
     <h1>ESS Threats</h1>
 <p id="desc">Paste pilot names (typically copied from local) below, to determine if any of them have been on a killmail in a Huginn or Curse within the last 30 days. Note that pilots in Brave Collective corporations are excluded.</p>
     <textarea id="inputBox" placeholder="Paste local here (one pilot per line)" rows="10" cols="30"></textarea><br>
-    <button onclick="checkWords()">Check</button>
     <p id="result"></p>
 </body>
 </html>
