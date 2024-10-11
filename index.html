@@ -7,11 +7,9 @@
     <script>
         let stringList = [];
 
-        // Fetch the list of strings from the JSON file
-        fetch('ess_threats.json')  // Updated JSON file name
+        fetch('ess_threats.json?v=20241011T2243')
             .then(response => response.json())
             .then(data => {
-                // Convert all strings in the list to lowercase for case-insensitive comparison
                 stringList = data.map(word => word.toLowerCase());
             });
 
@@ -39,7 +37,7 @@
 </head>
 <body>
     <h1>ESS Threats</h1>
-<p id="desc">Paste pilot names (typically copied from local) below, to determine if any of them have been on a killmail in a Huginn or Curse within the last 30 days. Note that pilots in Brave Collective corporations are excluded.</p>
+<p id="desc">Paste pilot names (typically copied from local) below, to determine if any of them have been on a killmail in a Huginn or Curse within the last 60 days. Note that pilots in Brave Collective corporations are excluded. Last updated: 2024-10-11.</p>
     <textarea id="inputBox" placeholder="Paste local here (one pilot per line)" rows="10" cols="30"></textarea><br>
     <p id="result"></p>
 </body>
